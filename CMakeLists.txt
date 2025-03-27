@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.19)
+
 #cmake -B build -G Ninja -DCMAKE_C_COMPILER="/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
 #cmake --build build
 
