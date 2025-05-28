@@ -30,6 +30,7 @@ target_sources(JWModules PRIVATE
     ${SOURCE_DIR}/src/AbcdSeq.cpp 
     ${SOURCE_DIR}/src/Add5.cpp 
     ${SOURCE_DIR}/src/Arrange.cpp 
+    ${SOURCE_DIR}/src/Arrange16.cpp 
     ${SOURCE_DIR}/src/BlankPanel.cpp 
     ${SOURCE_DIR}/src/BouncyBalls.cpp 
     ${SOURCE_DIR}/src/Cat.cpp 
