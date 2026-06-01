@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 3.19)
 
 #cmake -B build -G Ninja -DCMAKE_C_COMPILER="/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
 #cmake --build build
@@ -22,10 +22,8 @@ project(JWModules VERSION 0.1 DESCRIPTION "JWModules for MetaModule" LANGUAGES C
 
 add_library(JWModules STATIC)
 
-target_compile_definitions(JWModules PRIVATE METAMODULE_BUILTIN)
-
 # Add sources from the Rack source repo
-set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/../Rack/plugins/JW-Modules)
+set(SOURCE_DIR ../Rack/plugins/JW-Modules)
 
 target_sources(JWModules PRIVATE
     ${SOURCE_DIR}/src/JWModules.cpp                    # Note: this file contains init(rack::Plugin*)
@@ -35,16 +33,11 @@ target_sources(JWModules PRIVATE
     ${SOURCE_DIR}/src/Arrange16.cpp 
     ${SOURCE_DIR}/src/BlankPanel.cpp 
     ${SOURCE_DIR}/src/BouncyBalls.cpp 
-    ${SOURCE_DIR}/src/Buffer.cpp 
     ${SOURCE_DIR}/src/Cat.cpp 
     ${SOURCE_DIR}/src/D1v1de.cpp 
     ${SOURCE_DIR}/src/DivSeq.cpp 
     ${SOURCE_DIR}/src/EightSeq.cpp 
-    ${SOURCE_DIR}/src/FM4Dice.cpp 
-    ${SOURCE_DIR}/src/FM16Seq.cpp 
-    ${SOURCE_DIR}/src/Fract.cpp 
     ${SOURCE_DIR}/src/FullScope.cpp 
-    ${SOURCE_DIR}/src/Grains.cpp 
     ${SOURCE_DIR}/src/GridSeq.cpp 
     ${SOURCE_DIR}/src/JWResizableHandle.hpp 
     ${SOURCE_DIR}/src/MinMax.cpp 
@@ -57,34 +50,23 @@ target_sources(JWModules PRIVATE
     ${SOURCE_DIR}/src/Pres1t.cpp 
     ${SOURCE_DIR}/src/Quantizer.cpp 
     ${SOURCE_DIR}/src/QuantizeUtils.cpp 
-    ${SOURCE_DIR}/src/RandomSound.cpp 
-    ${SOURCE_DIR}/src/SampleGrid.cpp 
-    ${SOURCE_DIR}/src/ShiftRegRnd.cpp 
     ${SOURCE_DIR}/src/SimpleClock.cpp 
-    ${SOURCE_DIR}/src/StereoSwitch.cpp 
-    ${SOURCE_DIR}/src/StereoSwitchInv.cpp 
     ${SOURCE_DIR}/src/Str1ker.cpp 
-    ${SOURCE_DIR}/src/Subtract5.cpp 
     ${SOURCE_DIR}/src/ThingThing.cpp 
     ${SOURCE_DIR}/src/Timer.cpp 
     ${SOURCE_DIR}/src/Tree.cpp 
     ${SOURCE_DIR}/src/Trigs.cpp 
     ${SOURCE_DIR}/src/WavHead.cpp 
     ${SOURCE_DIR}/src/XYPad.cpp
-    
+    ${SOURCE_DIR}/src/Rnbo.cpp
     # ${SOURCE_DIR}/src/MyModule2.cpp
 )
 
 # Add includes and compile options for source repo
 target_include_directories(JWModules PRIVATE ${SOURCE_DIR}/src)
-
-# Restore RNBO-related include directories
 target_include_directories(JWModules PRIVATE ${SOURCE_DIR}/lib/rnbo)
 target_include_directories(JWModules PRIVATE ${SOURCE_DIR}/lib/rnbo/common)
 target_include_directories(JWModules PRIVATE ${SOURCE_DIR}/lib/rnbo/src)
-
-# Ensure Rnbo.cpp is excluded from the build
-# ${SOURCE_DIR}/src/Rnbo.cpp
 
 # Call this to link and create the plugin file
 create_plugin(

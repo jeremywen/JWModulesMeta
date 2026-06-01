@@ -6,31 +6,10 @@
 	"MetaModulePluginMaintainerEmail": "jeremy@jeremywentworth.com",
 	"MetaModulePluginMaintainerUrl": "https://jeremywentworth.com",
 	"MetaModuleDescription": "JW-Modules ported from VCV Rack",
-	"MetaModuleIncludedModules":
-	[
+	"MetaModuleIncludedModules": [
 		{
-			"slug": "BlankPanel_1HP",
-			"name": "Blank Panel (1HP)"
-		},
-		{
-			"slug": "BlankPanel_SM",
-			"name": "Blank Panel (Small)"
-		},
-		{
-			"slug": "BlankPanel_MD",
-			"name": "Blank Panel (Medium)"
-		},
-		{
-			"slug": "BlankPanel_LG",
-			"name": "Blank Panel (Large)"
-		},
-		{
-			"slug": "CoolBreeze",
-			"name": "Cool Breeze"
-		},
-		{
-			"slug": "Pete",
-			"name": "Pete"
+			"slug": "AbcdSeq",
+			"name": "AbcdSeq"
 		},
 		{
 			"slug": "Add5",
@@ -41,76 +20,48 @@
 			"name": "Arrange"
 		},
 		{
+			"slug": "Arrange16",
+			"name": "Arrange16"
+		},
+		{
+			"slug": "BlankPanel_1HP",
+			"name": "Blank Panel (1HP)"
+		},
+		{
+			"slug": "BlankPanel_2HP",
+			"name": "Blank Panel (2HP)"
+		},
+		{
+			"slug": "BlankPanel_4HP",
+			"name": "Blank Panel (4HP)"
+		},
+		{
+			"slug": "BlankPanel_LG",
+			"name": "Blank Panel (Large)"
+		},
+		{
+			"slug": "BlankPanel_MD",
+			"name": "Blank Panel (Medium)"
+		},
+		{
+			"slug": "BlankPanel_SM",
+			"name": "Blank Panel (Small)"
+		},
+		{
 			"slug": "BouncyBalls",
 			"name": "Bouncy Balls"
 		},
-        {
+		{
+			"slug": "Buffer",
+			"name": "Buffer"
+		},
+		{
 			"slug": "0Cat",
 			"name": "0Cat"
 		},
 		{
-			"slug": "FullScope",
-			"name": "Full Scope"
-		},
-		{
-			"slug": "GridSeq",
-			"name": "GridSeq"
-		},
-		{
-			"slug": "8Seq",
-			"name": "8Seq"
-		},
-		{
-			"slug": "AbcdSeq",
-			"name": "AbcdSeq"
-		},
-		{
-			"slug": "DivSeq",
-			"name": "DivSeq"
-		},
-		{
-			"slug": "MinMax",
-			"name": "Min Max"
-		},
-        {
-			"slug": "NoteSeq",
-			"name": "NoteSeq"
-		},
-        {
-			"slug": "NoteSeqFu",
-			"name": "NoteSeqFu"
-		},
-        {
-			"slug": "NoteSeq16",
-			"name": "NoteSeq16"
-		},
-        {
-			"slug": "Trigs",
-			"name": "Trigs"
-		},
-        {
-			"slug": "Patterns",
-			"name": "Patterns"
-		},
-        {
-			"slug": "1Pattern",
-			"name": "1Pattern"
-		},
-		{
-			"slug": "Quantizer",
-			"name": "Quantizer"
-		},
-        {
-			"slug": "SimpleClock",
-			"name": "Simple Clock"
-		},
-        {
-			"slug": "Timer",
-			"name": "Timer"
-		},
-		{
-			"slug": "Str1ker",
-			"name": "Str1ker"
+			"slug": "CoolBreeze",
+			"name": "Cool Breeze"
 		},
 		{
 			"slug": "D1v1de",
@@ -118,25 +69,129 @@
 			"description": "Clock Divider"
 		},
 		{
+			"slug": "DivSeq",
+			"name": "DivSeq"
+		},
+		{
+			"slug": "8Seq",
+			"name": "8Seq"
+		},
+		{
+			"slug": "FullScope",
+			"name": "Full Scope"
+		},
+		{
+			"slug": "Fract",
+			"name": "Fract"
+		},
+		{
+			"slug": "Grains",
+			"name": "Grains"
+		},
+		{
+			"slug": "GridSeq",
+			"name": "GridSeq"
+		},
+		{
+			"slug": "MinMax",
+			"name": "Min Max"
+		},
+		{
+			"slug": "NoteSeq",
+			"name": "NoteSeq"
+		},
+		{
+			"slug": "NoteSeq16",
+			"name": "NoteSeq16"
+		},
+		{
+			"slug": "NoteSeqFu",
+			"name": "NoteSeqFu"
+		},
+		{
+			"slug": "1Pattern",
+			"name": "1Pattern"
+		},
+		{
+			"slug": "Patterns",
+			"name": "Patterns"
+		},
+		{
+			"slug": "Pete",
+			"name": "Pete"
+		},
+		{
 			"slug": "Pres1t",
 			"name": "Pres1t",
 			"description": "Voltage Storage"
+		},
+		{
+			"slug": "Quantizer",
+			"name": "Quantizer"
+		},
+		{
+			"slug": "RandomSound",
+			"name": "Random Sound"
+		},
+		{
+			"slug": "SampleGrid",
+			"name": "Sample Grid"
+		},
+		{
+			"slug": "ShiftRegRnd",
+			"name": "Shift Register Random"
+		},
+		{
+			"slug": "SimpleClock",
+			"name": "Simple Clock"
+		},
+		{
+			"slug": "StereoSwitch",
+			"name": "Stereo Switch"
+		},
+		{
+			"slug": "StereoSwitchInv",
+			"name": "Stereo Switch Inverted"
+		},
+		{
+			"slug": "Str1ker",
+			"name": "Str1ker"
+		},
+		{
+			"slug": "Subtract5",
+			"name": "Subtract5"
 		},
 		{
 			"slug": "ThingThing",
 			"name": "Thing Thing"
 		},
 		{
-			"slug": "WavHead",
-			"name": "Wav Head"
+			"slug": "Timer",
+			"name": "Timer"
 		},
 		{
 			"slug": "Tree",
 			"name": "Tree"
 		},
 		{
+			"slug": "Trigs",
+			"name": "Trigs"
+		},
+		{
+			"slug": "WavHead",
+			"name": "Wav Head"
+		},
+		{
 			"slug": "XYPad",
 			"name": "XY Pad"
+		},
+		{
+			"slug": "FM16Seq",
+			"name": "FM16Seq"
+		},
+		{
+			"slug": "FM4Dice",
+			"name": "FM4Dice"
 		}
 	]
-  }
+}
